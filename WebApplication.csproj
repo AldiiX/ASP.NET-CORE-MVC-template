@@ -7,6 +7,7 @@
         <Configurations>Debug;Testing;Release</Configurations>
         <Platforms>AnyCPU</Platforms>
         <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+        <StartupObject>WebApplication.Program</StartupObject>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
