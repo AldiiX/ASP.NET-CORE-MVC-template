@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers;
 
-public class HomeController(ILogger<HomeController> logger) : Controller {
+public class HomeController : Controller {
 
 
     [Route("/")]
