@@ -35,7 +35,7 @@ public static class Program {
                 };
             } else options.Configuration = "localhost:6379";
 
-            options.InstanceName = "MySalonMostSession";
+            options.InstanceName = "WebAppSession";
         });
         builder.Services.AddSession(options => {
             options.IdleTimeout = TimeSpan.FromDays(365);
@@ -44,7 +44,7 @@ public static class Program {
 
             options.Cookie.MaxAge = TimeSpan.FromDays(365); // Trvání cookie na 365 dní
             //options.Cookie.Expiration = TimeSpan.FromDays(365);
-            options.Cookie.Name = "mysalonmost_session";
+            options.Cookie.Name = "webapp_session";
         });*/
 
         builder.Configuration
